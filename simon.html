@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simon game</title>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link rel="stylesheet" href="simon.css">
+ <link href="https://fonts.googleapis.com/css?family=Capriola|Open+Sans" rel="stylesheet">
+ <script src="simon.js"></script>
+ <audio id="audio1"><source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source></audio>
+   <audio id="audio2"><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source></audio>
+   <audio id="audio3"><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source></audio>
+   <audio id="audio4"><source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source></audio>
+
+
+</head>
+<body>
+<div class="container-fluid">
+  <div class="col-12 text-center">
+
+    <div class="fixed">
+
+    <div class="fixed back-container">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 width="640px" height="640px" viewBox="0 0 1700.79 1700.79" enable-background="new 0 0 1700.79 1700.79"
+    	 xml:space="preserve">
+    <circle stroke="#000000" stroke-miterlimit="10" cx="846.478" cy="847.231" r="843.552"/>
+    </svg>
+
+  </div>
+
+<div class="fixed button-container">
+  <div class="row">
+
+  <svg id="id1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="300px" viewBox="0 0 521.65 522.12" enable-background="new 0 0 521.65 522.12" xml:space="preserve">
+   <path  stroke="#000000" stroke-miterlimit="10" d="M521.65,2.44V299.73c-119.641,6.959-215.43,102.75-222.391,222.39H1.97
+   	C9.26,238.4,237.92,9.73,521.65,2.44z"/>
+</svg>
+<svg id="id2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="300px" viewBox="0 0 521.65 522.12" enable-background="new 0 0 521.65 522.12" xml:space="preserve">
+<path stroke="#000000" stroke-miterlimit="10" d="M521.65,522.12H224.36C217.401,402.479,121.61,306.69,1.97,299.729V2.44
+	C285.69,9.729,514.36,238.39,521.65,522.12z"/>
+</svg>
+</div>
+
+
+
+<div class="row">
+
+    <svg id="id3" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 width="300px" height="300px" viewBox="0 0 521.65 522.12" enable-background="new 0 0 521.65 522.12" xml:space="preserve">
+    <path stroke="#000000" stroke-miterlimit="10" d="M1.969,2.44H299.26c6.959,119.641,102.75,215.43,222.39,222.391v297.29
+    	C237.929,514.831,9.259,286.171,1.969,2.44z"/>
+    </svg>
+<svg id="id4" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 width="300px" height="300px" viewBox="0 0 521.65 522.12" enable-background="new 0 0 521.65 522.12" xml:space="preserve">
+    <path d="M1.969,522.121l0-297.291c119.641-6.959,215.43-102.75,222.391-222.39h297.29
+    	C514.359,286.161,285.699,514.831,1.969,522.121z"/>
+    </svg>
+
+</div>
+</div>
+
+<div class="fixed button-container-two">
+  <label>steps <output id="game_steps">hi</output></label>
+  <label>start <button id="start">&nbsp;</button></label>
+  <label>strict <button id="strict">&nbsp;</button></label>
+</div>
+
+
+
+</div>
+
+<div class="alert" id="error"><p>Oops, wrong combination</p></div>
+<div class="alert" id="winner"><p>Hurray! It's a glorious victory!</p></div>
+
+</div>
+</div>
+</body>
+</html>
